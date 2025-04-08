@@ -1,0 +1,627 @@
+<a href="https://www.freecounterstat.com" title="website hits counter"><img src="https://counter4.optistats.ovh/private/freecounterstat.php?c=h39cnaqxrdaeatb6lbmyly49lw2tf743" border="0" title="website hits counter" alt="website hits counter"></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Streaming</title>
+    <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #playerContainer {
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+        }
+        .btn-container {
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 12px 24px;
+            margin: 10px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-fox { background: #3b82f6; color: white; }
+        .btn-sky { background: #22c55e; color: white; }
+        .btn-hindi { background: #ef4444; color: white; }
+        .btn:hover { transform: scale(1.1); }
+        .telegram-popup {
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #0077b6;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: slideUp 0.5s ease-out;
+        }
+        .telegram-popup a {
+            color: yellow;
+            text-decoration: none;
+        }
+        @keyframes slideUp {
+            from { transform: translateX(-50%) translateY(50px); opacity: 0; }
+            to { transform: translateX(-50%) translateY(0); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div id="playerContainer">
+        <div id="jwplayerDiv"></div>
+    </div>
+    <div class="btn-container">
+        
+    <div class="telegram-popup">
+        📢 Join our <a href="https://t.me/+aipK2mToZ8piMmNl" target="_blank">Telegram</a> for Live Updates! 🚀
+    </div>
+    <script>
+        jwplayer("jwplayerDiv").setup({
+            file: "https://live-test.tsports.com/live-02/index.m3u8?hdnts=URLPrefix=aHR0cHM6Ly9saXZlLXRlc3QudHNwb3J0cy5jb20v~Expires=17436002443600~hmac=1fdfe8ddcbf56e3eefcb254f9facdca9e6fce112f92dcf335b77a9a930116421",
+            autostart: true,
+            controls: true,
+            width: "100%",
+            aspectratio: "16:9"
+        });
+        function changeVideo(url) {
+            jwplayer("jwplayerDiv").load([{ file: url }]);
+            jwplayer("jwplayerDiv").play();
+        }
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Telegram Popup</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; }
+        
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.85);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        
+        .popup-content {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 400px;
+            box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+            animation: pulse 1.5s infinite alternate;
+        }
+        
+        .popup-content h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #ff4444;
+            text-transform: uppercase;
+        }
+        
+        .popup-content p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .popup-content a {
+            display: inline-block;
+            padding: 12px 20px;
+            background: #ff4444;
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.7);
+            transition: 0.3s;
+        }
+        
+        .popup-content a:hover {
+            background: #cc0000;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+    </style>
+</head>
+<body>
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>🚨 Emergency Alert! 🚨</h2>
+            <p>Join our Telegram now for live updates and breaking news!</p>
+            <a href="http://Telegram.me/+aipK2mToZ8piMmNl" target="_blank">Join Now</a>
+        </div>
+    </div>
+    
+    <script>
+        function closePopup() {
+            document.getElementById("popup").style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Stream</title>
+  <script src="https://cdn.jwplayer.com/libraries/yourjwplayerkey.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .btn {
+      transition: all 0.3s ease;
+    }
+    .btn:hover {
+      transform: scale(1.1);
+    }
+    .telegram-popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #0088cc;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      animation: fadeIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4">
+  <div id="contentContainer" class="w-full max-w-4xl">
+    <div id="jwplayerDiv"></div>
+  </div>
+  <div class="flex gap-4 mt-6">
+    <button class="btn bg-blue-500 px-6 py-3 rounded-xl shadow-lg" onclick="changeVideo('https://1a-1791.com/live/r31jzt5k/slot-77/oat7-b08v_1080p/chunklist_DVR.m3u8')">fox</button>
+    <button class="btn bg-green-500 px-6 py-3 rounded-xl shadow-lg" onclick="changeVideo('https://1a-1791.com/live/v0xi25uh/slot-111/rgci-lz9s_1080p/chunklist_DVR.m3u8')">Sky Sport</button>
+    <button class="btn bg-red-500 px-6 py-3 rounded-xl shadow-lg" onclick="loadIframe('https://crxcs.blogspot.com/p/sport-live-stardust.html?link=https://iframv2.embedxt.site/iframe/frame.php&m=1')">Hindi</button>
+  </div>
+  <script>
+    jwplayer("jwplayerDiv").setup({
+      file: "https://myctxa.temycssme.wiki/720p.m3u8",
+      autostart: true,
+      controls: true,
+      width: "100%",
+      aspectratio: "16:9"
+    });
+    function changeVideo(url) {
+      document.getElementById("contentContainer").innerHTML = '<div id="jwplayerDiv"></div>';
+      jwplayer("jwplayerDiv").setup({ file: url, autostart: true, controls: true, width: "100%", aspectratio: "16:9" });
+    }
+    function loadIframe(url) {
+      document.getElementById("contentContainer").innerHTML = '<iframe id="contentFrame" src="' + url + '" allowfullscreen scrolling="no" class="w-full h-96"></iframe>';
+    }
+  </script>
+  <div class="telegram-popup" onclick="window.open('https://t.me/+bdfr3H7NBwwyZDZl', '_blank')">
+    📢 Join our Telegram for Live Updates! 🚀
+  </div>
+</body>
+</html>
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open Telegram Link</title>
+</head>
+<body>
+    <button onclick="openTelegram()">Open Telegram Link</button>
+
+    <script>
+        function openTelegram() {
+            window.open("https://t.me/+z-p9pYZ3WXs0MGE1", "_blank");
+        }
+    </script>
+</body>
+</html>  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nishkarsh</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+  <a href="https://www.freecounterstat.com" title="website counter">
+    <img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=kyp3jnx1qam3tx636zypzy9ttutfdtfs" border="0" alt="website counter">
+  </a>
+  <style>
+    .insta-btn img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      transition: transform 0.2s;
+    }
+    .insta-btn img:hover {
+      transform: scale(1.1);
+    }
+    #contentContainer {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 30px auto;
+      z-index: 1;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+      overflow: hidden;
+    }
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background: #ff7e5f;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #fd8e5e;
+    }
+    .telegram-strip {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .telegram-strip a {
+      margin-left: 10px;
+      padding: 10px 20px;
+      background: white;
+      color: #ff7e5f;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .telegram-strip a:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div id="contentContainer">
+    <div id="jwplayerDiv"></div>
+  </div>
+  <script>
+    jwplayer("jwplayerDiv").setup({
+      file: "https://1a-1791.com/live/d0t27del/slot-7/877u-83z3/chunklist.m3u8",
+      autostart: true,
+      controls: true,
+      width: "100%",
+      aspectratio: "16:9"
+    });
+    function changeVideo(url) {
+      document.getElementById("contentContainer").innerHTML = '<div id="jwplayerDiv"></div>';
+      jwplayer("jwplayerDiv").setup({
+        file: url,
+        autostart: true,
+        controls: true,
+        width: "100%",
+        aspectratio: "16:9"
+      });
+    }
+    function loadIframe(url) {
+      document.getElementById("contentContainer").innerHTML = '<iframe id="contentFrame" src="' + url + '" allowfullscreen="true" scrolling="no"></iframe>';
+    }
+    function openLivePage(url) {
+      window.location.href = url;
+    }
+  </script>
+  <a href="https://instagram.com/nyx.z_" target="_blank" class="insta-btn">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+  </a>
+  <div class="btn-container">
+    <!--button class="btn" onclick="openLivePage('https://crxcs.blogspot.com/p/sport-live-stardust.html?link=https://iframv2.embedxt.site/iframe/frame.php&m=1')">!</button>
+    <button class="btn" onclick="changeVideo('https://psplay.site/ipl/eng/master.m3u8?id=eng')">English</button>
+    <button class="btn" onclick="changeVideo('https://1a-1791.com/live/v0xi25uh/slot-111/rgci-lz9s_1080p/chunklist_DVR.m3u8')">Sky Sport</button>
+    <button class="btn" onclick="loadIframe('https://crxcs.blogspot.com/p/sport-live-stardust.html?link=https://iframv2.embedxt.site/iframe/frame.php&m=1')">Hindi</button-->
+  </div>
+  <div class="telegram-strip">
+    📢 Join our Telegram for Live Updates!
+    <a href="https://t.me/+bdfr3H7NBwwyZDZl" target="_blank">Join Now</a>
+  </div>
+</body>
+</html>
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nishkarsh</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+ <a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=kyp3jnx1qam3tx636zypzy9ttutfdtfs" border="0" title="website counter" alt="website counter"></a>
+   <style>
+     .insta-btn img {
+  width: 20px; /* Very small size */
+  height: 20px;
+  border-radius: 50%; /* Make it round */
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+}
+
+.insta-btn img:hover {
+  transform: scale(1.1);
+}
+    /* JWPlayer container */
+    #contentContainer {
+      position: relative;
+      width: 100%;
+      max-width: 800px;
+      margin: 30px auto;
+      z-index: 1;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+      overflow: hidden;
+    }
+    
+    iframe {
+      width: 100%;
+      height: 450px;
+      border: none;
+    }
+    
+    .btn-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+    
+    .btn {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background: #ff7e5f;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    
+    .btn:hover {
+      background: #fd8e5e;
+    }
+    
+    /* Telegram Strip */
+    .telegram-strip {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: white;
+      text-align: center;
+      padding: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .telegram-strip a {
+      margin-left: 10px;
+      padding: 10px 20px;
+      background: white;
+      color: #ff7e5f;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .telegram-strip a:hover {
+      background: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div id="contentContainer">
+    <div id="jwplayerDiv"></div>
+  </div>
+
+  <script>
+    // Set up the JWPlayer
+    jwplayer("jwplayerDiv").setup({
+      file: "https://1a-1791.com/live/v0xi25uh/slot-111/rgci-lz9s_1080p/chunklist_DVR.m3u8",
+      autostart: true,
+      controls: true,
+      width: "100%",
+      aspectratio: "16:9"
+    });
+
+    function changeVideo(url) {
+      document.getElementById("contentContainer").innerHTML = '<div id="jwplayerDiv"></div>';
+      jwplayer("jwplayerDiv").setup({
+        file: url,
+        autostart: true,
+        controls: true,
+        width: "100%",
+        aspectratio: "16:9"
+      });
+    }
+
+    function loadIframe() {
+      document.getElementById("contentContainer").innerHTML = '<iframe id="contentFrame" sandbox="allow-forms allow-pointer-lock allow-same-origin allow-scripts allow-top-navigation" allowfullscreen="true" scrolling="no" src="https://stream.cricktv.site/ss1hi"></iframe>';
+    }
+  </script>
+  <script>
+        function openLivePage1() {
+            window.location.href = 'live3.html';
+        }
+  </script>
+  
+  <script>
+        function openLivePage() {
+            window.location.href = 'live2.html';
+        }
+  </script>
+  <a href="https://instagram.com/nyx.z_" target="_blank" class="insta-btn">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" />
+  </a>
+
+  <div class="btn-container">
+    <!--button class="joined" onclick="openLivePage1()">PRIME HINDI PC</button
+    <button class="joined" onclick="openLivePage('https://crxcs.blogspot.com/p/sport-live-stardust.html?link=https://iframv2.embedxt.site/iframe/frame.php&m=1')">!</button>
+    <button class="btn" onclick="changeVideo('https://psplay.site/ipl/eng/master.m3u8?id=eng')">english</button>
+    <button class="btn" onclick="changeVideo('https://1a-1791.com/live/v0xi25uh/slot-111/rgci-lz9s_1080p/chunklist_DVR.m3u8')">sky sport</button>
+    
+    <button class="btn" onclick="loadIframe('https://crxcs.blogspot.com/p/sport-live-stardust.html?link=https://iframv2.embedxt.site/iframe/frame.php&m=1')"> HINDI </button>
+  </div>
+
+  <div class="telegram-strip">
+    📢 Join our Telegram for Live Updates!
+    <a href="https://t.me/+bdfr3H7NBwwyZDZl" target="_blank">Join Now</a>
+  </div>
+</body>
+</html>
+
+<!--DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nishkarsh</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="//content.jwplatform.com/libraries/SAHhwvZq.js"></script>
+  <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+<a href="https://www.freecounterstat.com" title="website counter"><img src="https://counter6.optistats.ovh/private/freecounterstat.php?c=kyp3jnx1qam3tx636zypzy9ttutfdtfs" border="0" title="website counter" alt="website counter"></a>
+  <style>
+      /* Popup Styles */
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.2);
+    text-align: center;
+    z-index: 9999;
+    width: 500px; /* Larger size */
+    max-width: 90%;
+}
+
+.popup p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.popup video {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.join {
+    background: #28a745;
+    color: white;
+}
+
+.later {
+    background: #dc3545;
+    color: white;
+}
+    /* Smooth page load animation */
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: linear-gradient(45deg, #ff9a9e, #fad0c4, #ffdde1);
+      color: #333;
+      text-align: center
